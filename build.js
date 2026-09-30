@@ -134,7 +134,7 @@ const PAGES = [
   { file: 'index.html',
     title: 'QC Title | Title Insurance in North &amp; South Carolina',
     desc: 'QC Title provides residential, land, and commercial title insurance and title services throughout North and South Carolina, with responsive service rooted in Charlotte.',
-    cta: true },
+    cta: true, light: true },
   { file: 'about.html',
     title: 'About QC Title | Charlotte Title Company Serving the Carolinas',
     desc: 'Built in Charlotte and serving North and South Carolina. QC Title brings experienced title service, responsive communication, and dependable protection to every transaction.',

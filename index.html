@@ -22,7 +22,7 @@
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="nav">
+<header class="nav nav--light">
   <div class="nav__inner">
     <a href="index.html" class="nav__logo" aria-label="QC Title — home"><span class="wm" aria-hidden="true"><span class="wm__q">QC</span><span class="wm__t">Title</span></span></a>
     <nav class="nav__links" aria-label="Primary">
@@ -51,36 +51,38 @@
 </div>
 <main id="main">
 <!-- HERO -->
-<section class="hero hero--home">
-  <div class="hero__bg">
-    <picture>
-          <source srcset="assets/img/hero.webp" type="image/webp" />
-          <img src="assets/img/hero.jpg" alt="Refined two-story home with blue shutters and a manicured front yard" width="1366" height="768" fetchpriority="high" />
-        </picture>
-  </div>
+<section class="hero hero--frame">
   <div class="wrap">
-    <div class="hero__content">
+    <div class="hero__head" data-reveal>
       <span class="eyebrow">Title Insurance &bull; North &amp; South Carolina</span>
-      <h1>Rooted in Charlotte. Trusted across the Carolinas.</h1>
+      <h1>Rooted in Charlotte. <span class="h1-line">Trusted across the Carolinas.</span></h1>
       <p class="hero__sub">QC Title provides responsive, experienced title services for residential, land, and commercial transactions throughout North and South Carolina. Based in Charlotte, we combine careful title work, dependable protection, and clear communication to help clients move forward with confidence.</p>
       <div class="hero__actions">
         <a href="order.html" class="btn btn--primary">Order Title</a>
-        <a href="services.html" class="btn btn--outline-light">Explore Our Services</a>
+        <a href="services.html" class="btn btn--secondary">Explore Our Services</a>
       </div>
     </div>
-  </div>
-  <div class="hero__floats" aria-hidden="true">
-    <div class="float float--1">
-      <span class="float__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg></span>
-      <span><span class="float__k">Residential first</span><span class="float__v">Land &amp; commercial too</span></span>
-    </div>
-    <div class="float float--2">
-      <span class="float__ico float__ico--purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span>
-      <span><span class="float__k">WFG &amp; Commonwealth</span><span class="float__v">National underwriters</span></span>
-    </div>
-    <div class="float float--3">
-      <span class="float__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-      <span><span class="float__k">North &amp; South Carolina</span><span class="float__v">Charlotte roots</span></span>
+    <div class="hero__frame" data-reveal>
+      <div class="hero__media">
+        <picture>
+          <source srcset="assets/img/hero.webp" type="image/webp" />
+          <img src="assets/img/hero.jpg" alt="Refined two-story home with blue shutters and a manicured front yard" width="1366" height="768" fetchpriority="high" />
+        </picture>
+      </div>
+      <ul class="hero__strip" aria-label="At a glance">
+        <li>
+          <span class="hero__strip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg></span>
+          <span><strong>Residential, land &amp; commercial</strong><em>One team for every property type</em></span>
+        </li>
+        <li>
+          <span class="hero__strip-ico hero__strip-ico--purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <span><strong>WFG &amp; Commonwealth</strong><em>Established national underwriters</em></span>
+        </li>
+        <li>
+          <span class="hero__strip-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><strong>Charlotte-based</strong><em>Serving all of North &amp; South Carolina</em></span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
