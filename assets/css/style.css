@@ -544,6 +544,21 @@ a.card:hover .card__more svg { transform: translateX(3px); }
 .faq-group h2 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin-bottom: 8px; }
 .faq-group > p { margin-bottom: 24px; }
 
+/* ---------- Green band (home services) ---------- */
+.band-green {
+  position: relative; overflow: hidden; color: #fff;
+  background:
+    radial-gradient(70% 60% at 85% 10%, rgba(255,255,255,.10), transparent 70%),
+    radial-gradient(60% 50% at 10% 95%, rgba(91,45,142,.28), transparent 70%),
+    linear-gradient(160deg, #0f6a62 0%, #0b5750 55%, #09463f 100%);
+}
+.band-green h2 { color: #fff; }
+.band-green .section-head p { color: rgba(255,255,255,.82); }
+.band-green .eyebrow { color: rgba(255,255,255,.72); }
+.band-green .section-head .eyebrow::after { background: linear-gradient(90deg, rgba(255,255,255,.9), rgba(255,255,255,.3)); }
+.band-green .svc { border-color: rgba(255,255,255,.14); box-shadow: 0 30px 60px -30px rgba(0,0,0,.55); }
+.band-green .svc:hover { box-shadow: 0 40px 70px -30px rgba(0,0,0,.65); }
+
 /* ---------- Dark bands & CTA ---------- */
 .band { position: relative; overflow: hidden; background: var(--night); color: #fff; }
 .band h2 { color: #fff; }
