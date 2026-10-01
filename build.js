@@ -4,6 +4,10 @@
    Regenerate with:  node build.js                                    */
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
+const stamp = (f) => crypto.createHash('md5').update(fs.readFileSync(path.join(__dirname, f))).digest('hex').slice(0, 8);
+const CSS_V = stamp('assets/css/style.css');
+const JS_V = stamp('assets/js/main.js');
 
 const SITE = {
   name: 'QC Title',
@@ -79,6 +83,7 @@ const cta = () => `
 <section class="section section--cta">
   <div class="wrap">
     <div class="cta-card" data-reveal>
+      <span class="sheen" aria-hidden="true"></span>
       <span class="eyebrow eyebrow--light">North &amp; South Carolina</span>
       <h2>Ready to move forward with confidence?</h2>
       <p>From residential purchases and land transactions to commercial real estate, QC Title is ready to provide responsive service and dependable title protection across North and South Carolina.</p>
@@ -180,7 +185,7 @@ const head = (p) => `<!DOCTYPE html>
 <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="assets/img/icon-32.png" sizes="32x32" />
 <link rel="apple-touch-icon" href="assets/img/icon-180.png" />
-<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css?v=${CSS_V}" />
 </head>
 <body>
 `;
@@ -222,7 +227,7 @@ for (const p of PAGES) {
     (p.cta ? cta() : '') + '</main>\n' +
     footer() +
     (p.file === 'index.html' ? '\n' + SCHEMA + '\n' : '') +
-    '\n<script src="assets/js/main.js"></script>\n</body>\n</html>\n';
+    '\n<script src="assets/js/main.js?v=' + JS_V + '"></script>\n</body>\n</html>\n';
   fs.writeFileSync(path.join(__dirname, p.file), out);
   console.log('built', p.file, (out.length / 1024).toFixed(1) + 'kb');
 }
