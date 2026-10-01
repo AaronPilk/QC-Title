@@ -53,6 +53,7 @@ function expandPictures(html) {
 
 const nav = (active, light) => `
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="ambient" aria-hidden="true"><span class="orb orb--teal"></span><span class="orb orb--purple"></span><span class="orb orb--mist"></span></div>
 <header class="nav${light ? ' nav--light' : ''}">
   <div class="nav__inner">
     <a href="index.html" class="nav__logo" aria-label="QC Title — home">${LOGO}</a>

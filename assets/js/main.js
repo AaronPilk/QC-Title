@@ -103,6 +103,25 @@
     });
   }
 
+  /* --- Hero media: light scroll parallax --- */
+  var heroMedia = document.querySelector('.hero__media');
+  if (heroMedia && !reduce) {
+    var hImg = heroMedia.querySelector('img');
+    hImg.addEventListener('animationend', function () { heroMedia.classList.add('settled'); });
+    var ticking = false;
+    var parallax = function () {
+      var r = heroMedia.getBoundingClientRect();
+      var vh = window.innerHeight;
+      if (r.bottom > 0 && r.top < vh) {
+        var p = (r.top + r.height / 2 - vh / 2) / vh;   /* -1 .. 1 */
+        hImg.style.setProperty('--py', (p * -22).toFixed(1) + 'px');
+      }
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(parallax); } }, { passive: true });
+    parallax();
+  }
+
   /* --- Current year --- */
   var yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();
