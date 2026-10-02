@@ -11,8 +11,8 @@ none, output directory: `/`, production branch: `main`). Domain: QCTitleCLT.com.
 
 > **Rooted in Charlotte. Trusted across the Carolinas.**
 
-High-end, Charlotte-rooted, residential-friendly, Carolinas-wide. Teal `#0E8A8A`
-and purple `#5B2D8E` are accents on a white / `#f5f5f7` Apple-style ground, never
+High-end, Charlotte-rooted, residential-friendly, Carolinas-wide. Teal `#047E8C`
+and purple `#2C1050` are accents on a white / `#f5f5f7` Apple-style ground, never
 large saturated backgrounds. Charlotte is part of the story, not the service-area
 limit: coverage always reads North **and** South Carolina.
 
@@ -50,10 +50,11 @@ and `{{PIC:basename|alt text|width|height|lazy|eager}}`, which expands to a
 
 ## Logo
 
-The nav and footer currently use a typographic lockup (`LOGO` in `build.js`,
-styled by `.wm` in the CSS). When the approved teal/purple logo file is supplied,
-drop `logo.png` / `logo-white.png` into `assets/img/` and replace the `LOGO`
-markup with `<img>` tags.
+`assets/img/logo.png` is the approved lockup (skyline + QC TITLE + Queen City
+Title); `logo-white.png` is a white silhouette of it for dark surfaces (nav over
+photo heroes, footer); `mark.png` is the skyline alone. Favicons are the "QC"
+letters. Source art lives in `_source-originals/` (gitignored). Brand colors are
+sampled from the logo: teal `#047E8C`, purple `#2C1050`.
 
 ## Order form
 

@@ -30,9 +30,10 @@ const I = {
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
 };
 
-/* Typographic lockup. Swap the inner markup for the approved logo file
-   (assets/img/logo.png / logo-white.png) once it is supplied. */
-const LOGO = `<span class="wm" aria-hidden="true"><span class="wm__q">QC</span><span class="wm__t">Title</span></span>`;
+/* Approved logo lockup: color version on light nav / scrolled nav, white
+   silhouette over dark heroes and in the footer. Source art in _source-originals. */
+const LOGO = `<img class="logo logo--color" src="assets/img/logo.png" alt="QC Title — Queen City Title" width="1200" height="881" /><img class="logo logo--white" src="assets/img/logo-white.png" alt="" width="1200" height="881" />`;
+const LOGO_WHITE = `<img class="logo" src="assets/img/logo-white.png" alt="QC Title — Queen City Title" width="1200" height="881" loading="lazy" />`;
 
 const NAV_ITEMS = [
   ['index.html', 'Home'],
@@ -101,7 +102,7 @@ const footer = () => `
   <div class="wrap">
     <div class="footer__grid">
       <div>
-        <a href="index.html" class="footer__logo" aria-label="QC Title">${LOGO}</a>
+        <a href="index.html" class="footer__logo" aria-label="QC Title">${LOGO_WHITE}</a>
         <p>Residential, land, and commercial title insurance and title services throughout North and South Carolina — rooted in Charlotte.</p>
       </div>
       <div>
@@ -174,7 +175,7 @@ const head = (p) => `<!DOCTYPE html>
 <title>${p.title}</title>
 <meta name="description" content="${p.desc}" />${p.noindex ? '\n<meta name="robots" content="noindex" />' : ''}
 <link rel="canonical" href="${SITE.url}/${p.file === 'index.html' ? '' : p.file}" />
-<meta name="theme-color" content="#0E8A8A" />
+<meta name="theme-color" content="#047E8C" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="QC Title" />
 <meta property="og:title" content="${p.title}" />
