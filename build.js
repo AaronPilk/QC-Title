@@ -103,7 +103,7 @@ const footer = () => `
     <div class="footer__grid">
       <div>
         <a href="index.html" class="footer__logo" aria-label="QC Title">${LOGO_WHITE}</a>
-        <p>Residential, land, and commercial title insurance and title services throughout North and South Carolina — rooted in Charlotte.</p>
+        <p>Residential, land, and commercial title insurance and title services throughout North and South Carolina.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -143,8 +143,8 @@ const PAGES = [
     desc: 'QC Title provides residential, land, and commercial title insurance and title services throughout North and South Carolina, with responsive service rooted in Charlotte.',
     cta: true, light: true },
   { file: 'about.html',
-    title: 'About QC Title | Charlotte Title Company Serving the Carolinas',
-    desc: 'Built in Charlotte and serving North and South Carolina. QC Title brings experienced title service, responsive communication, and dependable protection to every transaction.',
+    title: 'About QC Title | Title Insurance Across North &amp; South Carolina',
+    desc: 'QC Title brings experienced title service, responsive communication, and dependable protection to residential, land, and commercial transactions throughout North and South Carolina.',
     cta: true },
   { file: 'services.html',
     title: 'Title Services | Residential, Land &amp; Commercial Title Insurance — QC Title',
@@ -159,7 +159,7 @@ const PAGES = [
     desc: `Submit a title order to QC Title. Send the property and transaction details and we will open the file. Email ${SITE.email} or call ${SITE.phonePretty}.`,
     cta: false, light: true },
   { file: 'contact.html',
-    title: 'Contact QC Title | Charlotte Title Company — NC &amp; SC',
+    title: 'Contact QC Title | Title Insurance in North &amp; South Carolina',
     desc: `Reach QC Title by phone at ${SITE.phonePretty} or email ${SITE.email}. Residential, land, and commercial title services across North and South Carolina.`,
     cta: false },
   { file: '404.html', title: 'Page not found — QC Title',
@@ -196,7 +196,7 @@ const SCHEMA = `<script type="application/ld+json">
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "QC Title",
-  "description": "Residential, land, and commercial title insurance and title services throughout North and South Carolina, rooted in Charlotte.",
+  "description": "Residential, land, and commercial title insurance and title services throughout North and South Carolina.",
   "url": "${SITE.url}",
   "telephone": "+1-704-467-3301",
   "email": "${SITE.emailLower}",
